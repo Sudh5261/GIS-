@@ -186,14 +186,14 @@ a{
 .footer-boxes{
     display: flex;
     font-size: 30px;
-    color:#384451
+    color:#384451;
+    transition: all 0.3s ease;
 }
 .footer-boxes:hover{
     display: flex;
     font-size: 40px;
     color:#384451;
-    transition-duration: 0.2s;
-    transform-origin: all;
+    transform: scale(1.1);
 }
 .footer-boxes p{
     margin-left:10px;
@@ -203,7 +203,7 @@ a{
 
 .social-media{
     height: 50px;
-    
+    transition: all 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,8 +213,7 @@ a{
 .social-trans:hover{
     font-size: 35px;
     color:#384451;
-    transition-property: all;
-    transition-duration: 0.2s;
+    transform: scale(1.1);
 }
 
 

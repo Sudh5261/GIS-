@@ -1,0 +1,238 @@
+* {
+    margin: 0px;
+    font-family: arial;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:#384451;
+}
+i{
+    font-size:20px;
+}
+.top-head{
+    font-size: 60px;
+    display: flex;
+    height: 100px;
+    width:100%;
+    color:#384451;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top-head-small-txt{
+    font-size: 25px;
+    color:#384451;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-body{
+    display: flex;
+    justify-content: center;
+
+}
+.body-content{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    margin: 40px auto;
+    height: 450px;
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.content-top{
+    display: flex;
+    align-items: center;
+    height:35px;
+    font-weight: 600;
+    width:100%;
+    font-size: 20px;
+    margin-left: 100px;
+    color: #384451;
+    margin-top:50px;
+}
+.line-below-content-top{
+    height: 2px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+#line{
+    background-color:#384451;
+    opacity: 0.3;
+    height: 1px;
+    width:90%;
+}
+.main-content-box{
+    display: flex;
+    height: 90%;
+    width:90%;
+    /* background-color: antiquewhite; */
+}
+.content-left-box{
+    /* display: flex; */
+    margin-top:5px;
+    height: 100%;
+    width:50%;
+    /* background-color: #384451; */
+}
+.content-right-box{
+    height: 100%;
+    display: flex;
+    margin-top:5px;
+    width:50%;
+    flex-direction: column;
+    /* background-color:blue; */
+}
+.first-column{
+    margin-left:5px;
+    height:60px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+
+}
+#personal-information{
+    font-size: 13px;
+    margin-right: 2px;
+}
+.left-box-line-one{
+    width:100%;
+}
+.line-left-one{
+    width: 100%;
+    height: 1px;
+    opacity: 0.3;
+    background-color: #384451;
+}
+.right-box-line-one{
+    margin-top: 45px;
+    width:100%;
+
+}
+.second-column{
+    margin-top:20px;
+    font-size: 20px;
+    color:#384451;
+}
+.second-column-below-txt{
+    font-size: 15px;
+    color:black;
+}
+.second-column-box{
+    height: 90px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:100%;
+
+}
+.second-column-box-right{
+    margin-top:100px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.third-column{
+    font-size: 20px;
+    color:#384451;
+    margin-top:20px;
+
+}
+.third-column-lock{
+    color:green;
+}
+.third-column-box{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#cross-right-box{
+    color:red;
+    font-size:20px;
+
+}
+#update-col-three{
+    color:#F09118;
+    
+}
+#second-col-right-box-share{
+    color:#82BB20;
+}
+#second-col-right-box-eye{
+    color:#E88F17;
+}
+.sec-col-ticks-left-box{
+    color:#09AA53;
+}
+#sec-col-updates-left-box{
+    color:#EB8D14;
+}
+
+.lowest-line{
+    height: 1px;
+    background-color: #384451;
+    width:90%;
+    margin-left:65px;
+    opacity: 0.3;
+}
+
+.lowest-part{
+    display: flex;
+    width:100%;
+    height:50px;
+    /* background-color: #384451; */
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.footer-boxes{
+    display: flex;
+    font-size: 30px;
+    color:#384451;
+    transition: all 0.3s ease;
+}
+.footer-boxes:hover{
+    display: flex;
+    font-size: 40px;
+    color:#384451;
+    /* transition-duration: 0.2s;
+    transform-origin: all; */
+    transform: scale(1.1);
+}
+.footer-boxes p{
+    margin-left:10px;
+    font-size: 20px;
+    color:#384451
+}
+
+.social-media{
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color:#384451
+}
+.social-trans:hover{
+    font-size: 35px;
+    color:#384451;
+    transition-property: all;
+    transition-duration: 0.2s;
+}

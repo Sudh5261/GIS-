@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gis(Geographic Information System)</title>
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- External CSS file -->
     <link rel="stylesheet" href="style.css">
     <!-- Favicon -->
@@ -22,7 +22,7 @@
             <!-- Search bar -->
             <div class="mainbox_search">
                 <div class="searchicon">
-                    <i class="fa-brands fa-sistrix"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                     <input placeholder="Search all waste maps, incidents, and guides">
                 </div>
             </div>
@@ -39,7 +39,7 @@
                 <div class="newdata border">
                     <!-- Report New Waste button linking to AppSheet -->
                     <button>
-                        <a href="https://www.appsheet.com/start/da5177c2-1cf6-43ea-ba1a-7806de6328ed?platform=desktop#appName=GIS-383890032&vss=H4sIAAAAAAAAA63Puw7CMAwF0F-pPPcLsiIGhGABsRAGk7hSRF4iKaWK8u-4PMTERKfI19LxTYGboWGXUV1AHMt3WtMIAoqE_RhJgpCwCD5fg5XQStiie4UKXexTEy2mbFQz8EONwyihQj21Hy9TAlH-48S87Vowmnw2naHrZE8Sm2-H15PCwS8Daguuz3i29PwgG7Vy1gXVJ9IHrjpDxbTyy3tErzdB84kObaL6AL8n5a21AQAA&view=campus%20plastic%20waste%20map" class="report-new-waste">Report New Waste</a>
+                        <a href="https://www.appsheet.com/start/da5177c2-1cf6-43ea-ba1a-7806de6328ed?platform=desktop#appName=GIS-383890032&vss=H4sIAAAAAAAAA63Puw7CMAwF0F-pPPcLsiIGhGABsRAGk7hSRF4iKaWK8u-4PMTERKfI19LxTYGboWGXUV1AHMt3WtMIAoqE_RhJgpCwCD5fg5XQStiie4UKXexTEy2mbFQz8EONwyihQj21Hy9TAlH-48S87Vowmnw2naHrZE8Sm2-H15PCwS8Daguuz3i29PwgG7Vy1gXVJ9IHrjpDxbTyy3tErzdB84kObaL6AL8|new-waste" class="report-new-waste">Report New Waste</a>
                     </button>
                 </div>
                 <div class="account">
@@ -49,99 +49,97 @@
         </div>    
     </header>
 
-    <!-- 🔹 Sidebar + Main Content -->
-    <main class="mainbody">
-        <div class="mainbody-content">
-            <!-- Sidebar navigation -->
-            <div class="sidebar">
-                <div class="sidebar-icons">
-                    <!-- Menu icon -->
-                    <div class="sidebar-size">
-                        <i class="fa-solid fa-bars tophead_menu"></i>
-                    </div>
-                    <!-- Dashboard link -->
-                    <div id="dashboard" class="sidebar-size">
-                        <i class="fa-solid fa-border-all"></i>
-                        <a href="index.html">Dashboard</a>
-                    </div>
-                    <!-- Waste Map link -->
-                    <div id="map" class="sidebar-size">
-                        <i class="fa-solid fa-earth-americas"></i>
-                        <a href="https://www.appsheet.com/start/da5177c2-1cf6-43ea-ba1a-7806de6328ed?platform=desktop#appName=GIS-383890032&vss=H4sIAAAAAAAAA6WOuw4CIRREf8VMzRfQGgtjtNFoIRa4XBIiC5uFVTeEfxd8ZGu1vHPnnEzC1dBtG2VzAT-m6VrRCI4ksBs7EuACc-9i760AE9jI9hUeZIg0q5RARj6xjyFSAE_fCvi_CxiMIheNNtRXW2WL5U2Wd-VKMFHIDO0Q5dnSc3ahci6Z9s0QSO1r5ZcZYekW9046tfaqSLW0gfIDypMui28BAAA=&view=Waste%20view">Waste Map</a>
-                    </div>
-                    <!-- Eco Guide link -->
-                    <div id="eco-guide" class="sidebar-size">
-                        <i class="fa-solid fa-book-open"></i>
-                        <a href="https://www.appsheet.com/start/da5177c2-1cf6-43ea-ba1a-7806de6328ed?platform=desktop#appName=GIS-383890032&vss=H4sIAAAAAAAAA6WOzQrCMBCEX0XmnCfItRQRUQ-Kl8ZDbLcQbJPSpGoJeXe3_p7V284s38xEnA1dtkGXJ8giftSSRkhEhd3YkYJUyJwNvWsUhMJatw8zzzaz-WAqVgnpIF4BgTxk_JKXf_YL8GGDqQ31U9iEcsgT5PeEsfGGkATaIehjQ_fNDKXEXu3KwVO15zG_jPALm187bauV4w5Z68ZTugF1eh4nagEAAA==&view=ECO%20Guide">Eco Guide</a>
-                    </div>
-                    <!-- Feedback link -->
-                    <div id="feedback" class="sidebar-size">
-                        <i class="fa-regular fa-comment-dots"></i>
-                        <a href="Feedback.html">Feedback</a>
-                    </div>
-                    <!-- Contact Us link -->
-                    <div id="contact-us" class="sidebar-size">
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="contact_us.html">Contact Us</a>
-                    </div>
+    <div class="main-container">
+        <!-- 🔹 Sidebar navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-icons">
+                <!-- Menu icon -->
+                <div class="sidebar-size">
+                    <i class="fa-solid fa-bars tophead_menu"></i>
+                </div>
+                <!-- Dashboard link -->
+                <div id="dashboard" class="sidebar-size">
+                    <i class="fa-solid fa-border-all"></i>
+                    <a href="index.html">Dashboard</a>
+                </div>
+                <!-- Waste Map link -->
+                <div id="map" class="sidebar-size">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <a href="https://www.appsheet.com/start/da5177c2-1cf6-43ea-ba1a-7806de6328ed?platform=desktop#appName=GIS-383890032&vss=H4sIAAAAAAAAA6WOuw4CIRREf8VMzRfQGgtjtNFoIRa4XBIiC5uFVTeEfxd8ZGu1vHPnnEzC1dBtG2VzAT-m6VrRCI4ksBs7EuACc-9i760AE9jI9hUeZIg0q5RARj6xjyFSAE_fCvi_CxiMIheNNtRXW2WL5U2Wd-VKMFHIDO0Q5dnSc3ahci6Z9s0QSO1r5ZcZYekW9046tfaqSLW0gfIDypMui28BAAA=&view=Waste%20view">Waste Map</a>
+                </div>
+                <!-- Eco Guide link -->
+                <div id="eco-guide" class="sidebar-size">
+                    <i class="fa-solid fa-book-open"></i>
+                    <a href="https://www.appsheet.com/start/da5177c2-1cf6-43ea-ba1a-7806de6328ed?platform=desktop#appName=GIS-383890032&vss=H4sIAAAAAAAAA6WOzQrCMBCEX0XmnCfItRQRUQ-Kl8ZDbLcQbJPSpGoJeXe3_p7V284s38xEnA1dtkGXJ8giftSSRkhEhd3YkYJUyJwNvWsUhMJatw8zzzaz-WAqVgnpIF4BgTxk_JKXf_YL8GGDqQ31U9iEcsgT5PeEsfGGkATaIehjQ_fNDKXEXu3KwVO15zG_jPALm187bauV4w5Z68ZTugF1eh4nagEAAA==&view=ECO%20Guide">Eco Guide</a>
+                </div>
+                <!-- Feedback link -->
+                <div id="feedback" class="sidebar-size">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <a href="Feedback.html">Feedback</a>
+                </div>
+                <!-- Contact Us link -->
+                <div id="contact-us" class="sidebar-size">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="contact_us.html">Contact Us</a>
                 </div>
             </div>
+        </aside>
 
+        <!-- 🔹 Main Content Area -->
+        <main class="content-area">
             <!-- Welcome banner -->
-            <div class="below-navbar">
-                <div class="welcome">
-                    <p>Welcome to the <b>Campus Eco GIS Platform</b> - Mapping a Cleaner Campus</p>
+            <div class="welcome">
+                <p>Welcome to the <b>Campus Eco GIS Platform</b> - Mapping a Cleaner Campus</p>
+            </div>
+
+            <!-- Content Boxes -->
+            <section class="content">
+                <div class="box box-size">
+                    <p><b>Waste Map Overview</b></p>
+                    <div class="image1"></div>
                 </div>
-            </div>
-        </div>
+                <div class="box box-size">
+                    <p><b>Locations Captured</b></p>
+                    <div class="image2"></div>
+                </div>
+                <div class="box box-size">
+                    <p><b>Eco-Tips Section</b></p>
+                    <div class="image3"></div>
+                </div>
+            </section>
 
-        <!-- 🔹 Main Content Boxes -->
-        <div class="content">
-            <div class="box1 box1-size">
-                <p><b>Waste Map Overview</b></p>
-                <div class="image1"><!-- Placeholder for image --></div>
-            </div>
-            <div class="box2 box1-size">
-                <p><b>Locations Captured</b></p>
-                <div class="image2"><!-- Placeholder for image --></div>
-            </div>
-            <div class="box3 box1-size">
-                <p><b>Eco-Tips Section</b></p>
-                <div class="image3"><!-- Placeholder for image --></div>
-            </div>
-        </div>   
-    </main>
-
-    <!-- 🔹 Footer Section -->
-    <footer>
-        <div class="lowest-part">
-            <!-- Resources column -->
-            <div class="info info-size">
-                <p class="lower-heading"><b>Resources</b></p>
-                <a href="https://www.appsheet.com/start/..."><p>Waste Maps</p></a>
-                <a href="https://www.appsheet.com/start/da5177c2-1cf6-43ea-ba1a-7806de6328ed?platform=desktop#appName=GIS-383890032&vss=H4sIAAAAAAAAA6WOzQrCMBCEX0XmnCfItRQRUQ-Kl8ZDbLcQbJPSpGoJeXe3_p7V284s38xEnA1dtkGXJ8giftSSRkhEhd3YkYJUyJwNvWsUhMJatw8zzzaz-WAqVgnpIF4BgTxk_JKXf_YL8GGDqQ31U9iEcsgT5PeEsfGGkATaIehjQ_fNDKXEXu3KwVO15zG_jPALm187bauV4w5Z68ZTugF1eh4nagEAAA==&view=ECO%20Guide"><p>Eco-Guide</p></a>
-                <p>Incident Hub</p>
-                <p>Educational Materials</p>
-            </div>
-            <!-- Community & Support column -->
-            <div class="info info-size">
-                <p class="lower-heading"><b>Community & Support</b></p>
-                <p>Community feed</p>
-                <a href="Feedback.html"><p>Feedback Form</p></a>
-                <a href="contact_us.html" id="fotter-contact-us">Contact Us</a>
-                <a href="#"><p>FAQs</p></a>
-                <a href="https://www.appsheet.com/start/da5177c2-1cf6-43ea-ba1a-7806de6328ed?platform=desktop#appName=AppGallery-10305&vss=H4sIAAAAAAAAA62PvQ7CIBRGX6X5Zp6A1TgYo0uNizhguU2JLTSFWhvCuwv-xLg2jpybc_IRcNM0lV5WV_BT-L62NIMjCBzmngS4wMoaP9hWgAnsZfeCZSMHUsWkfVNkFBHP7FPx5MDDkgj_xxIGrch4XWsacjH7qfS20zm7CfyaiAzd6OWlpecXkhljYrWtRkfqmGYtnuM2Zn3vpVE7q1K4lq2j-ADEhBwBgwEAAA==&view=Shared%20with%20me"><p>App Gallery</p></a>
-            </div>
-            <!-- About Us column -->
-            <div class="info info-size">
-                <p class="lower-heading"><b>About Us</b></p>
-                <p>Our Team</p>
-                <p>Partnerships</p>
-                <a href="privacy.html"><p>Privacy Policy</p></a>
-                <p>Terms & Conditions</p>
-                <p class="Copyright">Copyright © 2026 Sudhanshu Kumar. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+            <!-- Footer Section -->
+            <footer>
+                <div class="lowest-part">
+                    <!-- Resources column -->
+                    <div class="info">
+                        <p class="lower-heading"><b>Resources</b></p>
+                        <a href="https://www.appsheet.com/start/..."><p>Waste Maps</p></a>
+                        <a href="https://www.appsheet.com/start/da5177c2-1cf6-43ea-ba1a-7806de6328ed?platform=desktop#appName=GIS-383890032&vss=H4sIAAAAAAAAA6WOzQrCMBCEX0XmnCfItRQRUQ-Kl8ZDbLcQbJPSpGoJeXe3_p7V284s38xEnA1dtkGXJ8giftSSRkhEhd3YkYJUyJwNvWsUhMJatw8zzzaz-WAqVgnpIF4BgTxk_JKXf_YL8GGDqQ31U9iEcsgT5PeEsfGGkATaIehjQ_fNDKXEXu3KwVO15zG_jPALm187bauV4w5Z68ZTugF1eh4nagEAAA==&view=ECO%20Guide"><p>Eco-Guide</p></a>
+                        <p>Incident Hub</p>
+                        <p>Educational Materials</p>
+                    </div>
+                    <!-- Community & Support column -->
+                    <div class="info">
+                        <p class="lower-heading"><b>Community & Support</b></p>
+                        <p>Community feed</p>
+                        <a href="Feedback.html"><p>Feedback Form</p></a>
+                        <a href="contact_us.html" id="fotter-contact-us">Contact Us</a>
+                        <a href="#"><p>FAQs</p></a>
+                        <a href="https://www.appsheet.com/start/da5177c2-1cf6-43ea-ba1a-7806de6328ed?platform=desktop#appName=AppGallery-10305&vss=H4sIAAAAAAAAA62PvQ7CIBRGX6X5Zp6A1TgYo0uNizhguU2JLTSFWhvCuwv-xLg2jpybc_IRcNM0lV5WV_BT-L62NIMjCBzmngS4wMoaP9hWgAnsZfeCZSMHUsWkfVNkFBHP7FPx5MDDkgj_xxIGrch4XWsacjH7qfS20zm7CfyaiAzd6OWlpecXkhljYrWtRkfqmGYtnuM2Zn3vpVE7q1K4lq2j-ADEhBwBgwEAAA==&view=Shared%20with%20me"><p>App Gallery</p></a>
+                    </div>
+                    <!-- About Us column -->
+                    <div class="info">
+                        <p class="lower-heading"><b>About Us</b></p>
+                        <p>Our Team</p>
+                        <p>Partnerships</p>
+                        <a href="privacy.html"><p>Privacy Policy</p></a>
+                        <p>Terms & Conditions</p>
+                        <p class="Copyright">Copyright © 2026 Sudhanshu Kumar. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
